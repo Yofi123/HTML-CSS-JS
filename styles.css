@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    margin:16px auto;
+}
+form{
+    margin-left:50px;
+    margin-right:50px;
+    background-color: #1b1b32;
+    padding:30px 40px;
+    font-size:18px;
+    color:white;
+}
+label{
+    display:block;
+    margin:0.5rem 0;
+}
+.one input{
+    border-radius: 5px;
+    padding:5px;
+    width:100%;
+}
+.two input{
+    margin: 10px;
+}
+select{
+    border-radius:5px;
+    padding:5px;
+}
+select,textarea{
+    display:block;
+    width:100%;
+}
+button{
+    border:0;
+    margin-top:10px;
+    margin-bottom:20px;
+    padding:10px;
+    background-color:green;
+    width:100%;
+    color:white;
+}
