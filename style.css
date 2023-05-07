@@ -28,7 +28,7 @@ p{
     background-color: black;
 }
 nav{
-    height:50px;
+    height:38px;
     width:100%;
     padding: 10px;
     background-color:grey;
@@ -78,4 +78,49 @@ footer{
     height: 40px;
     text-align:center;
 }
-    
+.wraper{
+    width:500px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.wraper >div{
+    flex:1 1 120px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:10px;
+}
+.calc{
+    height:100px;
+    background-color: white;
+    margin:10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.btn{
+    color:white;
+    background-color: black;
+    font-size: 15px;
+    border-radius:5px;
+    padding:10px;
+    border-radius: 300px;
+    font-size:40px;
+}
+.btn-1{
+    color: red;
+    padding:10px;
+    border-radius: 300px;
+    font-size:40px;
+}
+.btn-2{
+    border-radius: 300px;
+    color:green;
+    font-size:40px;
+}
+.btn-3{
+    background-color: green;
+    border-radius: 400px;
+    font-size: 40px;
+    color:white;
+}   
