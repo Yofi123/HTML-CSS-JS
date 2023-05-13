@@ -3,10 +3,20 @@
     padding:0;
     margin:0;
 }
+
 body{
     background-color:black;
     color:white;
    }
+@media (300px<=width<=780px){
+    body{
+        background-color: green;
+    }
+    
+}
+.table{
+    margin:20px;
+}
 .title{
     height:50px;
     background-color: burlywood;
@@ -34,13 +44,13 @@ p{
     border:2px solid green;
     background-color: black;
 }
-nav{
+/* nav{
     height:38px;
     width:100%;
     padding: 10px;
     background-color:grey;
     margin-bottom:15px;
-}
+} */
 /*ul>li{
     padding:15px;
     
@@ -48,7 +58,7 @@ nav{
     display:inline;
     
 }*/
-ul{
+/* ul{
     background-color: grey;
     margin:0;
     padding:0;
@@ -62,7 +72,7 @@ a{
     text-decoration: none;
     padding:10px;
     color:rgb(210,255,196);
-}
+} */
 /*a{
     color:rgb(210, 255, 196);
     text-decoration: none;
@@ -70,7 +80,7 @@ a{
     padding:10px;
     text-align: center;
 }*/
-a:hover{
+/* a:hover{
     background-color:salmon;
 }
 a:visited{
@@ -79,7 +89,7 @@ a:visited{
 article,aside{
     background-color: blueviolet;
     margin-top: 25px;
-}
+} */
 footer{
     background-color: cadetblue;
     height: 40px;
@@ -100,14 +110,14 @@ footer{
     gap:10px;
     
 }
-.container{
-    height:auto;;
+.calculate{
+    height:auto;
     width:350px;
     margin:40px auto;
     padding:5px;
     border-radius:20px;
     border:2px solid grey;
-}
+} 
 .calc{
     height:80px;
     background-color: white;
@@ -121,6 +131,7 @@ footer{
     padding:5px;
     border-radius: 10px;
     font-size:40px;
+    border-color:grey;
 }
 .btn-1{
     color: red;
@@ -142,5 +153,5 @@ footer{
     color:white;
 }
 button:hover{
-    background-color: gold;
+    background-color: grey;
 }   
