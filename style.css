@@ -14,6 +14,17 @@ body{
     }
     
 }
+@media(max-width:400px){
+    .navbar-brand{
+        display:none;
+    }
+}
+@media(min-width:400px){
+    #two{
+        display:none;
+    }
+    
+}
 .table{
     margin:20px;
 }

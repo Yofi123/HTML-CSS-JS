@@ -11,16 +11,47 @@
 </head>
 <body>
     <div class="title">Full Stack Development</div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="front.html">FRONT END</a></li>
-            <li><a href = "view-form.html">Registration form</a></li>
-            <li><a href="calculator.html">Calculator</a></li>
-            <li><a href="list.html">List</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="about.html">About</a>
+          <a class="navbar-brand" href="front.html">Front end</a>
+          <a class="navbar-brand" href="view-form.html">Registration form</a>
+          <a class="navbar-brand" href="calculator.html">Calculator</a>
+          <a class="navbar-brand" href="list.html">List</a>
+          <button class="navbar-toggler" type="button" id="two" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Home</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="front.html">Front end</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="view-form.html">Registration form</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="calculator.html">Calculator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="list.html">List</a>
+                </li>
+                  
+            </div>
+          </div>
+        </div>
+      </nav>
     <section class="section">
         <p>semantics html layout</p>
         <p>This is a section</p>
