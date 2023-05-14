@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-PRACTICE</title>
+    
+</head>
+<body>
+    <button type="button" onclick="myDemo()">Click me</button>
+    <button onclick="document.write(2+6)">Add</button>
+    <p id="demo"></p>
+        <label>Enter a number</label>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        
+        <div>
+            <button onclick="add()">Add</button>
+        </div>
+       
+    <p id="display"></p>
+    <p id="sum"></p>
+    <!-- <script>
+        function isEven(){
+            let num = document.getElementById("num1").value;
+            let result;
+                if(num%2 == 0){
+                    result = num +  " is even";
+                }else if(num%2 != 0){
+                    result = num + " is odd";
+                }
+            document.getElementById("display").innerHTML = result;
+        }
+        
+    </script> -->
+    <script>
+        function add(){
+            let num1 = parseInt(document.getElementById("num1").value)
+            let num2 = parseInt(document.getElementById("num2").value)
+
+            let result = num1 + num2;
+            document.getElementById("display").innerHTML = "The sum is " + result;
+                if(result % 2==0){
+                    document.getElementById("sum").innerHTML = result + " is even"
+                }else{
+                    document.getElementById("sum").innerHTML = result + " is odd" 
+                }
+        }
+    </script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
