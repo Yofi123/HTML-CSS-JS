@@ -13,12 +13,14 @@
     <div class="title">Full Stack Development</div>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <a class="navbar-brand" href="about.html">About</a>
-          <a class="navbar-brand" href="front.html">Front end</a>
-          <a class="navbar-brand" href="view-form.html">Registration form</a>
-          <a class="navbar-brand" href="calculator.html">Calculator</a>
-          <a class="navbar-brand" href="list.html">List</a>
+          <nav class="nav" id="one">
+          <a class="nav-link" style="color:antiquewhite" href="index.html">Home</a>
+          <a class="nav-link" style="color:antiquewhite" href="about.html">About</a>
+          <a class="nav-link" style="color:antiquewhite" href="front.html">Front end</a>
+          <a class="nav-link" style="color:antiquewhite" href="view-form.html">Registration form</a>
+          <a class="nav-link" style="color:antiquewhite" href="calculator.html">Calculator</a>
+          <a class="nav-link" style="color:antiquewhite" href="list.html">List</a>
+          </nav>
           <button class="navbar-toggler" type="button" id="two" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,31 +55,34 @@
         </div>
       </nav>
     <div class="calculate">
-        <div class="calc"></div>
-    <div class="grid">
+      <div id="calc">
+        <div class="upperText"></div>
+        <div class="lowerText"></div>
+      </div>
+      <div class="grid">
         <button class="clear">AC</button>
-        <button class="operation">()</button>
-        <button class="operation">%</button>
-        <button class="operation">/</button>
+        <button class="operator">()</button>
+        <button class="operator">%</button>
+        <button class="operator">/</button>
         <button class="number">7</button>
         <button class="number">8</button>
         <button class="number">9</button>
-        <button class="operation">X</button>
+        <button class="operator">X</button>
         <button class="number">4</button>
         <button class="number">5</button>
         <button class="number">6</button>
-        <button class="operation">-</button>
+        <button class="operator">-</button>
         <button class="number">1</button>
         <button class="number">2</button>
         <button class="number">3</button>
-        <button class="operation">+</button>
+        <button class="operator">+</button>
         <button class="number">+/-</button>
         <button class="number">0</button>
-        <button class="number">.</button>
+        <button class="decimal">.</button>
         <button class="equal">=</button>
-    </div>
+      </div>
     
     </div>
-    
+    <script src="calculator.js"></script>
 </body>
 </html>
