@@ -160,7 +160,7 @@ footer{
 .calculate{
     height:auto;
     width:350px;
-    margin:100px auto;
+    margin:50px auto;
     padding:5px;
     border-radius:20px;
     border:2px solid grey;
@@ -171,7 +171,11 @@ footer{
     background-color: white;
     border-radius: 10px;
     margin:10px;
+    font-size: 15px;
     
+}
+.upperText,.lowerText{
+    font-size:25px;
 }
 .number,.decimal{
     color:white;

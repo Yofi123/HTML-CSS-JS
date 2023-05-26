@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- <label>Enter a number</label>
@@ -23,21 +25,39 @@
     <input type="number" id="num">
     <button onclick="studentGrade()">Check</button>
     <p id="display"></p> -->
-    <label for="">Name of a car</label>
+    <!-- <label for="">Name of a car</label>
     <input type="text" id="car">
-    <button onclick="addCars()">Add</button>
+    <button onclick="addCars()">Add</button> -->
+        <h1 style="margin-bottom:40px">Car Information Registration</h1>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Car name</label>
+          <input type="text" class="form-control" id="carname">
+          
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Car model</label>
+          <input type="text" class="form-control" id="carmodel">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Car price</label>
+            <input type="text" class="form-control" id="carprice">
+            
+          </div>
+        
+        <button type="button" class="btn btn-primary" onclick="addCars()">Submit</button>
+      </form>
 
-    <!-- <table id="myTable">
+    <table class="table table-success table-striped" id="myTable" style="margin-top:25px">
         <thead>
             <th>NO</th>
-            <th>Name of Cars</th>
+            <th>Car name</th>
+            <th>Model</th>
+            <th>Price</th>
         </thead>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
+        
 
-    </table> -->
+    </table>
     
     <script src="index.js"></script>
 </body>

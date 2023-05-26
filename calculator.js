@@ -48,7 +48,13 @@ function handleNumber(num){
     }
 }
 function handleOperater(op){
-    operator += op;
+    if(currentValue === ''){
+        return
+    }
+    if(previousValue !== ''){
+        calculate()
+    }
+    operator = op;
     previousValue = currentValue;
     currentValue = '';
 }

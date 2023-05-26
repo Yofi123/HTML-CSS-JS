@@ -74,9 +74,19 @@ function myDemo(){
 // }
 
 function addCars(){
-    const cars = []
-    let inputCars = document.getElementById("car").value;
-    cars.push(inputCars);
+    const name = []
+    let carName = document.getElementById("carname").value;
+    name.push(carName);
+
+    const model = []
+    let carModel = document.getElementById("carmodel").value;
+    model.push(carModel);
+
+    const price = []
+    let carPrice = document.getElementById("carprice").value;
+    price.push(carPrice);
+
+    
 
     // let table = document.getElementById("myTable");
     // let row = table.insertRow(0);
@@ -87,15 +97,27 @@ function addCars(){
     //     cell2.innerHTML = cars[i];
     // }
 
-    let table = document.createElement("table");
-    let row = table.insertRow(i);
-        let cell1 = row.insertCell(0);
-        let cell2 = row.insertCell(1); 
+    let table = document.getElementById("myTable");
+    let row = table.insertRow(-1);
+    let rowCount = table.rows.length;
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3); 
 
-    for(let i=0;i<cars.length;i++){
-        
+    
+    cell1.innerHTML = rowCount - 1;
 
-        cell1.innerHTML = i;
-        cell2.innerHTML = cars[i];
+   
+
+    for(let i=0;i<name.length;i++){
+        cell2.innerHTML = name[i];
+       
+    }
+    for(let i=0;i<model.length;i++){
+        cell3.innerHTML = model[i];
+    }
+    for(let i=0;i<price.length;i++){
+        cell4.innerHTML = price[i];
     }
 }
